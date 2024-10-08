@@ -1,5 +1,4 @@
 import React from 'react';
-// import { gql, useQuery } from '@apollo/client';
 import HomePage from "./components/home/HomePage"
 import Layout from './components/layout';
 import { Route ,Routes } from 'react-router-dom';

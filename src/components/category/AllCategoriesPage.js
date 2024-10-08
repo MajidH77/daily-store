@@ -4,12 +4,11 @@ import { GET_CATEGORY_INFO } from "../../graphql/queries";
 import { Container, Grid, Typography } from "@mui/material";
 
 
-import React,{useEffect , useState} from "react";
+import React,{ useState} from "react";
 import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { GET_PRODUCTS_INFO } from "../../graphql/queries";
 import { GET_CATEGORIES_INFO } from "../../graphql/queries";
 
 

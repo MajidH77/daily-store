@@ -3,12 +3,10 @@ import { createContext , useState,useEffect , useRef , useContext } from 'react'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
 import { Link , useNavigate } from "react-router-dom";
-import  shopIcon  from "../../assets/icons/shop.svg"
 import { useSelector } from "react-redux";
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
@@ -21,22 +19,17 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
-import { Card, Typography , Button , Grid , Flex, Paper, Input  } from "@mui/material";
+import {  Typography , Button , Grid , Paper  } from "@mui/material";
 import logo from "../../assets/icons/Daily Store - logo .png"
-import zIndex from '@mui/material/styles/zIndex';
+
 import {searchContext} from "../layout/index"
 import {setSearchContext} from "../layout/index"
 
-
-// export const setSearchContext = createContext();
-// export const searchContext = createContext();
 
 function Header(props) {
 
   const search = useContext(searchContext);
   const setSearch = useContext(setSearchContext);
-  // const [search, setSearch] = useState("");
 
 
 
@@ -177,16 +170,9 @@ const handleClick = (event) => {
 
 const navigate = useNavigate();
 
-  // const searchBtnHandler = event => {
-  //   setSearch(event.target.value);
-  //  navigate("/");
-  //   }
-
   return ( <>
 
 
-        
-                {/* <CssBaseline /> */}
                 <AppBar component="nav"   sx={{ display: "contents"}} style={{ background: '#ffffff' 
                  }}>
                   <Toolbar style={{ background: '#ffffff' ,
@@ -210,7 +196,6 @@ const navigate = useNavigate();
                     <Typography
                       variant="h6"
                       component="div"
-                      // sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                 >   
                 
                         
@@ -273,12 +258,7 @@ const navigate = useNavigate();
         placeholder="جستجو ..."
         inputProps={{ 'aria-label': 'search' }}
       />
-      {/* <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" /> */}
-      {/* <IconButton 
-      id="searchBtn"
-      onClick={searchBtnHandler} type="button" sx={{ p: '10px' }} aria-label="search">
-        <SearchIcon />
-      </IconButton> */}
+
 
 </Paper>
 

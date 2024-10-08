@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from "react";
+import React,{ useState} from "react";
 import { useQuery } from "@apollo/client";
 import { useNavigate,  useParams } from "react-router-dom";
 import { GET_PRODUCT_INFO } from "../../graphql/queries";
@@ -19,22 +19,12 @@ import Rating from '@mui/material/Rating';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { FaCheck  } from "react-icons/fa";
 
-
-import { LiaStoreAltSolid } from "react-icons/lia";
-import { FaStoreAlt } from "react-icons/fa";
 import { FaShop } from "react-icons/fa6";
-import { BsShop } from "react-icons/bs";
 
-import { CiBookmarkCheck } from "react-icons/ci";
-import { CiDeliveryTruck } from "react-icons/ci";
 import { TbTruckDelivery } from "react-icons/tb";
 
 
 import { IoShieldCheckmark } from "react-icons/io5";
-import { BsShieldCheck } from "react-icons/bs";
-import { PiShieldCheckLight } from "react-icons/pi";
-
-import { FaPercent } from "react-icons/fa6";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { toast } from "react-toastify";

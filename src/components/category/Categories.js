@@ -8,7 +8,7 @@ import Loader from "../shared/Loader";
 
 function Categories() {
   const { loading, data, errors } = useQuery(GET_CATEGORIES_INFO);
-// console.log(data);
+
   if (loading) return <Loader/>;
   if (errors) return <h3>Error...</h3>;
   
